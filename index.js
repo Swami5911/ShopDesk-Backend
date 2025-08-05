@@ -1,4 +1,3 @@
-
 const express = require("express");
 const cors = require("cors");
 const connectToMongo = require("./db");
@@ -6,7 +5,8 @@ const router = require("./Routes/router");
 require("dotenv").config(); // 👈 Ensures .env variables are loaded
 
 const app = express();
-const port = process.env.PORT || 3001; // 👈 Use environment port if deploying
+const port = process.env.PORT || 3001; 
+// 👈 Use environment port if deploying
 
 // Connect to MongoDB Atlas
 connectToMongo();
